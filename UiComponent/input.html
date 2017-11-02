@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script src="js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init()
+
+			function yan() {
+				var check = false;
+				mui("#input_example input").each(function() {
+					//若当前input为空，则alert提醒 
+					if(!this.value || this.value.trim() == "") {
+						var label = this.previousElementSibling;
+						mui.alert(label.innerText + "不允许为空");
+						check = false;
+						return false;
+					}
+				}); //校验通过，继续执行业务逻辑 
+				
+				if(check) {
+					mui.alert('验证通过!')
+				} else {
+					mui.alert("验证不通过！")
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<div class="mui-input-row mui-search">
+			<input type="search" class="mui-input-clear" placeholder="android">
+		</div>
+		<form class="mui-input-group">
+
+			<div class="mui-input-row">
+				<label>用户名</label>
+				<input type="text" class="mui-input-clear input_example input" placeholder="请输入用户名">
+			</div>
+
+			<div class="mui-input-row">
+				<label>密码</label>
+				<input type="password" class="mui-input-password input_example input" placeholder="请输入密码">
+			</div>
+			<div class="mui-button-row">
+				<button type="button" class="mui-btn mui-btn-primary" type="submit" onclick="yan()">确认</button>
+				<button type="button" class="mui-btn mui-btn-danger">取消</button>
+			</div>
+		</form>
+	</body>
+
+</html>

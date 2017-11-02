@@ -1,0 +1,56 @@
+{
+	"pages/index.html": {
+		"resources": [
+			"js/mui.min.js",
+			"css/mui.min.css",
+			"css/default.css",
+			"font-awesome/fonts/fontawesome-webfont.woff2",
+			"font-awesome/css/font-awesome.min.css",
+			"fonts/mui.ttf"
+		]
+	},
+	"src/pages/index.html": {
+		"resources": [
+			"src/mui/js/mui.min.js",
+			"src/controls/hotel-price-filter/main.js",
+			"src/common/event-binder.js",
+			"src/libs/vue.js",
+			"src/styles/default.css",
+			"src/mui/css/mui.min.css",
+			"src/controls/hotel-price-filter/ui.html",
+			"src/libs/ems.js",
+			"src/pages/index.js",
+			"src/font-awesome/css/font-awesome.min.css",
+			"src/libs/tp.js",
+			"src/libs/utils.js",
+			"src/libs/ems-text.js",
+			"src/common/page-helper.js",
+			"src/common/vue-filter.js",
+			"src/mui/js/mui.picker.min.js",
+			"src/mui/fonts/mui.ttf",
+			"src/common/element-maper.js",
+			"src/mui/css/mui.picker.min.css",
+			"src/controls/hotel-price-filter/style.css",
+			"src/libs/jquery.js",
+			"src/font-awesome/fonts/fontawesome-webfont.woff2"
+		],
+		"refer": [
+			"src/pages/city.html"
+		]
+	},
+	"src/pages/city.html": {
+		"resources": [
+			"src/common/event-binder.js",
+			"src/mui/js/mui.indexedlist.js",
+			"src/libs/utils.js",
+			"src/libs/vue.js",
+			"src/styles/default.css",
+			"src/common/page-helper.js",
+			"src/common/vue-filter.js",
+			"src/mui/css/mui.min.css",
+			"src/common/element-maper.js",
+			"src/pages/city.js",
+			"src/mui/css/mui.indexedlist.css"
+		]
+	}
+}

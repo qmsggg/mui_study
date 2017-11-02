@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+	</head>
+
+	<body>
+
+		<input type="button" value="onclick" onclick="mui('#sheet1').popover('toggle');" />
+		<button type="button" class="mui-btn">默认</button>
+		<button type="button" class="mui-btn mui-btn-primary">蓝色</button>
+		<button type="button" class="mui-btn mui-btn-success">绿色</button>
+		<button type="button" class="mui-btn mui-btn-warning">黄色</button>
+		<button type="button" class="mui-btn mui-btn-danger">红色</button>
+		<button type="button" class="mui-btn mui-btn-royal mui-btn-outlined">紫色</button>
+		<br />
+		<button type="button" data-loading-icon="mui-spinner mui-spinner-custom" class="mui-btn mui-btn-primary">确认</button>
+		<script type="text/javascript">
+			mui(document.body).on('tap', '.mui-btn', function(e) {
+				mui(this).button('loading');
+				setTimeout(function() {
+					mui(this).button('reset');
+				}.bind(this), 2000);
+			});
+		</script>
+		<div id="sheet1" class="mui-popover mui-popover-bottom mui-popover-action ">
+			<!-- 可选择菜单 -->
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#">菜单1</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a href="#">菜单2</a>
+				</li>
+			</ul>
+			<!-- 取消菜单 -->
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a href="#sheet1"><b>取消</b></a>
+				</li>
+			</ul>
+		</div>
+	</body>
+
+</html>
