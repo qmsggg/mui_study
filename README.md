@@ -8,5 +8,9 @@
 ### 3.注重质量 
 乔布斯早期照片 乔布斯是个完美主义者。他认为，完美的质量没有捷径，必须将优秀的质量定位给自己的承诺，并坚定不移的坚持下去。当对自己要求更高，并关注所有的细节后，产品就会和别人不一样。
 
+# 第三方资源
+- [IOS开发学习](https://github.com/qmsggg/qmsggg_BlogCollect/issues/66)
+
 # MY
 [我的IOS学习之路](https://github.com/qmsggg/qmsggg_ios/tree/master/MyStudyRecoder)
+
